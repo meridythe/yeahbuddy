@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <style>
+            body{
+                background-color: #d9ff66;
+            }
+
+            label {
+                 display: inline-block; width:300px; text-align: right; vertical-align: top; font-size:18px; font-weight:bold; margin-left:60px;
+            }  
+        </style>
+    </head>
+    <body>
+        <center><h1>The Max</h1></center>
+        <hr/>
+        <div>
+        <table>
+            <tr>
+                <td align="left" width="10%"> 
+                </td>
+                <td align="left" width="30%">
+                    <a href="restaurantHomePage.html">Home</a>
+                </td>
+                <td align="left" width="30%">
+                    <a href="restaurantMenu.html">Menu</a>
+                </td>
+                <td align="left" width="30%">
+                    <a href="restaurantContact.html">Contact Us</a>
+                </td>
+            </tr>
+        </table>
+        </div>
+        <hr/>
+        <br/>
+        <form action="#" method="post"> 
+            <div>
+                <label id="nameLabel" for="name">Name:</label>
+                <input type="text" id="name" name="name" style="width:200px;margin-left:20px;">
+            </div>
+            <br/>
+            <div>
+                <label id="emailLabel" for="email">Email:</label>
+                <input type="text" id="email" name="email" style="width:200px;margin-left:20px;">
+            </div>
+            <br/>
+            <div>
+                <label id="phoneLabel" for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" style="width:200px;margin-left:20px;">
+            </div>
+            <br/>
+            <div>
+                <label id="reasonLabel" for="reason">Reason:</label>
+                <select name="reason" style="width:200px;margin-left:20px;">
+                    <option value="catering">Catering</option>
+                    <option value="party">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <br/>
+            <div>
+                <label id="infoLabel" for="addtlInfo" style="text-align: top;">Additional Information: </label>
+                <textarea id="addtlInfo" name="addtlInfo" style="width:200px; height:100px;margin-left:20px;"></textarea>
+            </div>
+            <br/>
+            <div>
+                <label id="returnCustLabel" for="returnCust">Have you been to the restaurant?</label>
+                <input type="radio" id="returnCust" name="returnCust" value="No" style="margin-left:20px;" checked >No
+                <input type="radio" id="returnCust" name="returnCust" value="Yes" style="margin-left:10px;">Yes<br/>
+            </div>
+            <br/>
+            <div>
+                <label id="contactDaysLabel" for="contactDays">Best days to contact you:</label>
+                <input type="checkbox" name="contactDays" value="M" style="margin-left:20px;"/>M
+                <input type="checkbox" name="contactDays" value="T" style="margin-left:10px;"/>T
+                <input type="checkbox" name="contactDays" value="W" style="margin-left:10px;"/>W
+                <input type="checkbox" name="contactDays" value="Th" style="margin-left:10px;"/>Th
+                <input type="checkbox" name="contactDays" value="F" style="margin-left:10px;"/>F
+            </div>
+            <br/>
+            <div>
+                <input Type="submit" id="SubmitButton" value="Send Request" style="margin-left: 430px;"/>
+            </div>
+        </form>
+    </body>
+    <center><footer style ="position: fixed; bottom: 0; width: 100%; bottom: 20px;">
+        <hr/>
+        49 Rock Street, Pacific Palisades, California 90272<br/><br/>
+        (555) 555-1616
+    </footer></center>
+</html>
