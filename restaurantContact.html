@@ -4,7 +4,7 @@
         <title>Contact Us</title>
         <style>
             label {
-                 display: inline-block; width:300px; text-align: right; vertical-align: top; font-size:18px; font-weight:bold; margin-left:60px;
+                 display: inline-block; width:300px; text-align: right; vertical-align: top; font-size:18px; margin-left:60px;
             } 
             #navTbl{
                 margin-left: 30px;
@@ -30,10 +30,13 @@
             input[type=submit]{
                 margin-left: 490px;
             }
+            label.required{
+                font-weight: bold;
+            }
         </style>
         <link rel="stylesheet" href="restaurantStyles.css">
     </head>
-    <body>
+    <body class="basic">
         <center><h1 id=name>The Max</h1></center>
         <hr/>
         <div>
@@ -55,12 +58,12 @@
         <br/>
         <form action="#" method="post"> 
             <div>
-                <label id="nameLabel" for="name">Name:</label>
+                <label class="required" id="nameLabel" for="name">Name:</label>
                 <input type="text" id="name" name="name">
             </div>
             <br/>
             <div>
-                <label id="emailLabel" for="email">Email:</label>
+                <label class="required" id="emailLabel" for="email">Email:</label>
                 <input type="text" id="email" name="email">
             </div>
             <br/>
@@ -70,7 +73,7 @@
             </div>
             <br/>
             <div>
-                <label id="reasonLabel" for="rsnDrpDwn">Reason:</label>
+                <label class="required" id="reasonLabel" for="rsnDrpDwn">Reason:</label>
                 <select name="rsnDrpDwn" id=rsnDrpDwn>
                     <option value="catering">Catering</option>
                     <option value="party">Private Party</option>
@@ -85,13 +88,13 @@
             </div>
             <br/>
             <div>
-                <label id="returnCustLabel" for="returnCust">Have you been to the restaurant?</label>
+                <label class="required" id="returnCustLabel" for="returnCust">Have you been to the restaurant?</label>
                 <input type="radio" id="returnCust" name="returnCust" value="No" checked >No
                 <input type="radio" id="returnCust" name="returnCust" value="Yes">Yes<br/>
             </div>
             <br/>
             <div>
-                <label id="contactDaysLabel" for="contactDays">Best days to contact you:</label>
+                <label class="required" id="contactDaysLabel" for="contactDays">Best days to contact you:</label>
                 <input class="firstCheckbox" type="checkbox" name="contactDays" value="M"/>M
                 <input type="checkbox" name="contactDays" value="T"/>T
                 <input type="checkbox" name="contactDays" value="W"/>W

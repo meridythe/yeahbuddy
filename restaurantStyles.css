@@ -2,15 +2,21 @@
     color: #FF00FF 
 }
 
-body{
+body.basic{
     font-family: "Trebuchet MS"; 
-    background: linear-gradient(to bottom, rgba(145,232,66,1) 0%,rgba(252,252,252,1) 23%,rgba(252,255,252,0.98) 82%,rgba(255,84,252,0.98) 99%,rgba(252,252,252,0.98) 100%); 
+    background: linear-gradient(to bottom, rgba(145,232,66,1) 0%,rgba(252,252,252,1) 23%,rgba(252,255,252,0.98) 82%,rgba(255, 83, 252, 0.98) 99%,rgba(252,252,252,0.98) 100%); 
+    /*background: linear-gradient(to bottom, #fdfff9 0%,#91e842 100%,#fdfff9 100%);*/
+    min-height: 100%
+}
+
+body.home{
+    font-family: "Trebuchet MS"; 
     /*background: linear-gradient(to bottom, #fdfff9 0%,#91e842 100%,#fdfff9 100%);*/
     min-height: 100%
 }
 
 footer{
-    position: fixed; bottom: 0; width: 100%; bottom: 20px; 
+    position: fixed; bottom: 0; width: 100%; bottom: 20px; font-family: "Trebuchet MS"; text-align: center;
 }
 
 #navTD{
@@ -20,3 +26,4 @@ footer{
 html{
     height: 100%
 }
+
