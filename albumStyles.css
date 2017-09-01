@@ -1,5 +1,5 @@
 body{
-    background-color: #ffffc2
+    background-color: #ffffc2;
 }
 
 table{
@@ -11,13 +11,14 @@ table{
 }
 
 #albumName{
-    margin-bottom:0
+    margin-bottom:0; font-family: "Trebuchet MS";
 }
 
 #bandLink{
-    margin-bottom:0;margin-top:0;
+    margin-bottom:0; margin-top:0; 
 }
 
 #releaseDate{
-    margin-bottom:0;margin-top:0;
+    margin-bottom:0; margin-top:0;
 }
+
