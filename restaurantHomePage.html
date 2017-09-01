@@ -2,27 +2,21 @@
 <html>
     <head>
         <title>Home Page</title>
-        <style>
-            body{
-                background-color: #d9ff66;
-            }
-        </style>
+        <link rel="stylesheet" href="restaurantStyles.css">
     </head>
     <body>
-        <center><h1>The Max</h1></center>
+        <center><h1 id=name>The Max</h1></center>
         <hr/>
         <div>
-        <table>
+        <table style="margin-left:30px;">
             <tr>
-                <td align="left" width="10%"> 
-                </td>
-                <td align="left" width="30%">
+                <td id=navTD>
                     <a href="restaurantHomePage.html">Home</a>
                 </td>
-                <td align="left" width="30%">
+                <td id=navTD>
                     <a href="restaurantMenu.html">Menu</a>
                 </td>
-                <td align="left" width="30%">
+                <td id=navTD>
                     <a href="restaurantContact.html">Contact Us</a>
                 </td>
             </tr>
@@ -35,7 +29,7 @@
             style="width: 400px;height: 150px"/>
 
         <table border="1px" style="width: 400px;height: 300px;border-collapse:collapse;
-            margin-top:20px;">
+            margin-top:20px; font-weight:bold">
             <tr>
                 <td valign="top" style="padding-right:20px;padding-left:20px;">
                     <center><h3>Welcome to The Max!</h3></center>
@@ -50,7 +44,7 @@
             </tr>
         </table>
     </body>
-    <footer style="position: fixed; bottom: 0; width: 100%; bottom: 20px;">
+    <footer>
         <hr/>
         49 Rock Street, Pacific Palisades, California 90272<br/></br>
         (555) 555-1616
