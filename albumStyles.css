@@ -1,0 +1,23 @@
+body{
+    background-color: #ffffc2
+}
+
+table{
+    background-color: #f7f9f9; width: 100%;
+}
+
+#img1{
+    width: 200px; height: 200px
+}
+
+#albumName{
+    margin-bottom:0
+}
+
+#bandLink{
+    margin-bottom:0;margin-top:0;
+}
+
+#releaseDate{
+    margin-bottom:0;margin-top:0;
+}
