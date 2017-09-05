@@ -5,13 +5,11 @@
 body.basic{
     font-family: "Trebuchet MS"; 
     background: linear-gradient(to bottom, rgba(145,232,66,1) 0%,rgba(252,252,252,1) 23%,rgba(252,255,252,0.98) 82%,rgba(255, 83, 252, 0.98) 99%,rgba(252,252,252,0.98) 100%); 
-    /*background: linear-gradient(to bottom, #fdfff9 0%,#91e842 100%,#fdfff9 100%);*/
     min-height: 100%
 }
 
 body.home{
     font-family: "Trebuchet MS"; 
-    /*background: linear-gradient(to bottom, #fdfff9 0%,#91e842 100%,#fdfff9 100%);*/
     min-height: 100%
 }
 
@@ -27,3 +25,14 @@ html{
     height: 100%
 }
 
+a:hover{
+    font-weight: bold; color:black;
+}
+
+a:visited{
+    color: blueviolet;
+}
+
+a:active{
+    text-decoration: none;
+}
