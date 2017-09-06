@@ -7,10 +7,12 @@
                     border: 1px solid black;border-collapse: collapse;text-align: center;
             }
         </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="albumStyles.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
     </head>
-    <body>
-        <center><div style="background-image:url('images/anniversary.jpg');height:200px;width:200px;background-repeat:no-repeat;margin:0">
+    <body id=albumBody>
+        <center><div class="img-circle" style="background-image:url('images/anniversary.jpg');background-repeat:no-repeat">
         </div></center>
         <center><div>
         <h1 id=albumName>Designing a Nervous Breakdown</h1>
@@ -27,8 +29,8 @@
         <li>Christian Jankowski - Drums</li>
         <li>David Trumfio - Producer</li>
         </ul>
-        <center><table>
-            <caption><h2>Tracks</h2></caption>
+       <table class="table-striped">
+            <caption id=trackCaption><h2>Tracks</h2></caption>
             <thead>
                 <tr bgcolor="grey">
                     <th>Track #</th>
@@ -88,7 +90,6 @@
                     <td>5:47</td>
                 </tr>
             </tbody>
-        </table></center>
-
+        </table>
     </body>
 </html>

@@ -1,4 +1,4 @@
-body{
+#albumBody{
     background-color: #ffffc2;
 }
 
@@ -6,8 +6,13 @@ table{
     background-color: #f7f9f9; width: 100%;
 }
 
-#img1{
-    width: 200px; height: 200px
+.table-striped>tbody>tr:nth-child(odd) td{
+    background-color: #cce3f4;
+}
+
+.img-circle{
+    width: 200px;
+    height: 200px;
 }
 
 #albumName{
@@ -36,4 +41,8 @@ a:visited{
 
 a:hover {
     text-decoration: underline; background-color: orange;
+}
+
+#trackCaption{
+    text-align: center;
 }
