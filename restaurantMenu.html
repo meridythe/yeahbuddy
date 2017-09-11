@@ -1,132 +1,147 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Menu</title>  
+        <title>Menu</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="restaurantStyles.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <style>
-            #navTbl{
-                margin-left:30px;
+            #menuP{
+                vertical-align: top; 
+                text-align:center;
             }
-            #menuTbl{
-                width:1000px;
+            #menuContainer{
+                height:700px;
             }
-            #menuTD{
-                vertical-align: top; text-align:center; width:250px; height:60px;
+            #bevHeader{
+                text-decoration:underline;
             }
-            #bevTbl{
-                margin-left: 30px; 
-            }
-            #bevHead{
-                text-decoration: underline;
-            }
-            #bevBodyTD{
-                width:300px;
+            #hrLine{
+                height:1px;
+                border:none;
+                color:#333;
+                background-color:#333;
+                margin-top:0%;
             }
         </style>
     </head>
     <body class="basic">
-        <center><h1 id=name>The Max</h1></center>
-        <hr/>
-        <div>
-        <table id=navTbl>
-            <tr>
-                <td id=navTD>
-                    <a href="restaurantHomePage.html">Home</a>
-                </td>
-                <td id=navTD>
-                    <a href="restaurantMenu.html">Menu</a>
-                </td>
-                <td id=navTD>
-                    <a href="restaurantContact.html">Contact Us</a>
-                </td>
-            </tr>
-        </table>
-        </div>
-        <hr/>
-        <center><table id=menuTbl>
-            <tr>
-                <td id=menuTD> <h3>Burger and Fries</h3>
-                    An Americal Classic!<br/>
-                    Your choice - with or without cheese<br/>
-                    Pickle, onion, tomato, and lettuce<br/>
-                    Served with our famous thick cut<br/>
-                    french Fries<br/>
-                    $7.95
-                </td>
-                <td id=menuTD> <h3>Hot Dog and Chips</h3>
-                    A Summer Classic!<br/>
-                    Your choice - white or wheat bun<br/>
-                    Relish, mustard, and ketchup<br/>
-                    Served with our house-made chips<br/>
-                    $7.95
-                </td>
-                <td id=menuTD> <h3>Italian Sausage and Peppers</h3>
-                    An All-Time Favorite!!<br/>
-                    Your choice - mild or spicy<br/>
-                    Cole Slaw<br/>
-                    Served with garlic mashers<br/>
-                    $10.95
-                </td>
-            </tr>
-            <tr>
-                <td id=menuTD> <h3>Tenderloin Sandwich and Chips</h3>
-                    Really Hits the Spot!<br/>
-                    Plain or Sesame Seed Bun<br/>
-                    Pickle, onion, tomato, and lettuce<br/>
-                    Served with our house-made chips<br/>
-                    $8.95
-                </td>
-                <td id=menuTD> <h3>House Salad</h3>
-                    On the Lighter Side<br/>
-                    Your choice - with or without cheese<br/>
-                    Iceberg lettuce, tomatoes, peppers<br/>
-                    Thousand Island or Ranch Dressing<br/>
-                    Served with a dinner roll<br/>
-                    $6.95
-                </td>
-                <td id=menuTD> <h3>Brisket Sandwich and Fries</h3>
-                    A Taste of Texas!<br/>
-                    Smoked Brisket on thick-cut Texas<br/>
-                    Toast<br/>
-                    Cole Slaw<br/>
-                    Served with our famous thick-cut<br/>
-                    french fries<br/>
-                    $7.95
-                </td>
-            </tr>
-        </table></center>
-        <br/>
-        <div>
-            <table id=bevTbl>
-                <thead id=bevHead>
-                    <tr>
-                        <td>Beverages</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td id=bevBodyTD>Root Beer</td>
-                        <td id=bevBodyTD>$3.00</td>
-                    </tr>
-                    <tr>
-                        <td id=bevBodyTD>Bottled Water</td>
-                        <td id=bevBodyTD>$1.25</td>
-                    </tr>
-                    <tr>
-                        <td id=bevBodyTD>Lemonade</td>
-                        <td id=bevBodyTD>$1.00</td>
-                    </tr>
-                    <tr>
-                        <td id=bevBodyTD>Iced Tea</td>
-                        <td id=bevBodyTD>$1.25</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+            <div>
+                <h1 id=name>The Max</h1>
+            </div>
+            
+            <div>
+                <nav class="navbar navbar-default">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="restaurantHomePage.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li><a href="restaurantMenu.html">Menu</a></li>
+                        <li><a href="restaurantContact.html">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="container" id=menuContainer>
+                <div class="row" id=menuP>
+                    <div class="col-sm-4">
+                        <h3>Burger and Fries</h3>
+                        <p>An American Classic!<br/>
+                        Your choice - with or without cheese<br/>
+                        Pickle, onion, tomato, and lettuce<br/>
+                        Served with our famous thick cut<br/>
+                        french Fries<br/>
+                        $7.95</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Hot Dog and Chips</h3>
+                        <p>A Summer Classic!<br/>
+                        Your choice - white or wheat bun<br/>
+                        Relish, mustard, and ketchup<br/>
+                        Served with our house-made chips<br/>
+                        $7.95</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Italian Sausage and Peppers</h3>
+                        <p>An All-Time Favorite!!<br/>
+                        Your choice - mild or spicy<br/>
+                        Cole Slaw<br/>
+                        Served with garlic mashers<br/>
+                        $10.95</p>
+                    </div>
+                </div>
+                <div class="row" id=menuP>
+                    <div class="col-sm-4">
+                        <h3>Tenderloin Sandwich and Chips</h3>
+                        <p>Really Hits the Spot!<br/>
+                        Plain or Sesame Seed Bun<br/>
+                        Pickle, onion, tomato, and lettuce<br/>
+                        Served with our house-made chips<br/>
+                        $8.95</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>House Salad</h3>
+                        <p>On the Lighter Side<br/>
+                        Your choice - with or without cheese<br/>
+                        Iceberg lettuce, tomatoes, peppers<br/>
+                        Thousand Island or Ranch Dressing<br/>
+                        Served with a dinner roll<br/>
+                        $6.95</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Brisket Sandwich and Fries</h3>
+                        <p>A Taste of Texas!<br/>
+                        Smoked Brisket on thick-cut Texas<br/>
+                        Toast<br/>
+                        Cole Slaw<br/>
+                        Served with our famous thick-cut<br/>
+                        french fries<br/>
+                        $7.95</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p id="bevHeader">Beverages</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <p>
+                            Root Beer <br/>
+                            Bottled Water <br>
+                            Lemonade <br>
+                            Iced Tea
+                        </p>
+                    </div>
+                    <div class="col-xs-2">
+                        <p>
+                            $3.00 <br>
+                            $1.25 <br>
+                            $1.00 <br>
+                            $1.25
+                        </p>   
+                    </div>
+                    <div class="col-xs-3">
+                    </div>
+                    <div class="col-xs-3">
+                    </div>
+                </div>
+
+            </div>
+                <div class="container-fluid"></div>
+                <hr/ id="hrLine">
+                
+                <div class="row footer">
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-4">
+                        <p>
+                            49 Rock Street, Pacific Palisades, California 90272<br/></br>
+                            (555) 555-1616
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                    </div>
+                </div>
+
     </body>
-    <center><footer>
-        <hr/>
-        49 Rock Street, Pacific Palisades, California 90272<br/><br/>
-        (555) 555-1616
-    </footer></center>
 </html>

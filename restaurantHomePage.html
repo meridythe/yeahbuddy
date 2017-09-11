@@ -1,54 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head class="page-header">
         <title>Home Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="restaurantStyles.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
     </head>
     <body class="home">
-        <center><h1 id=name>The Max</h1></center>
-        <hr/>
-        <div>
-        <table style="margin-left:30px;">
-            <tr>
-                <td id=navTD>
-                    <a href="restaurantHomePage.html">Home</a>
-                </td>
-                <td id=navTD>
-                    <a href="restaurantMenu.html">Menu</a>
-                </td>
-                <td id=navTD>
-                    <a href="restaurantContact.html">Contact Us</a>
-                </td>
-            </tr>
-        </table>
-        </div>
-        <hr/>
-        <div style="background: linear-gradient(to bottom, #fcfcfc 0%,#91e842 88%,#fcfcfc 53%);height:650px">
-            <br/>
-            <center><img src="images/themax2.jpg"
-                alt="This is a picture of The Max"
-                style="width: 400px;height: 150px"/>
 
-            <table border="1px" style="width: 400px;height: 300px;border-collapse:collapse;
-                margin-top:20px; font-weight:bold">
-                <tr>
-                    <td valign="top" style="padding-right:20px;padding-left:20px;">
-                        <center><h3>Welcome to The Max!</h3></center>
+            <div>
+                <h1 id=name>The Max</h1>
+            </div>
+            
+            <div>
+                <nav class="navbar navbar-default">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="restaurantHomePage.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li><a href="restaurantMenu.html">Menu</a></li>
+                        <li><a href="restaurantContact.html">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        <div class="container-fluid" style="background: linear-gradient(to bottom, #fcfcfc 0%,#91e842 88%);height:700px">
+
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="jumbotron">
+                        <h1 style="text-align:center;">Grand Opening!!!</h1>
+                        <p style="text-align:center;">The Max will have its Grand Opening on October 2, 2018!!
+                            Be there or be square!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                        <img src="images/themax2.jpg"
+                            alt="This is a picture of The Max"
+                            style="width: 400px;height: 150px"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <h3>Welcome to the Max!</h3>
+                    <p>
                         The Max is the freshest place around to get your fave foods, while having a 
                         righteous time maxing and relaxing with your friends.  Get stoked to play some of the
                         most gnarly video games on one of our 5 gaming machines.  We have bodacious 
                         fries and choice burgers to satisfy all you dudes and dudettes so you aren't buggin.  
                         Located minutes away from the beach, you can grab
                         some rad grub and hit the waves with your boards.  We also have the most bitchin
-                        tunes on our juke box for the most kickin dance parties.  
-                    </td>
-                </tr>
-            </table></center>
+                        tunes on our juke box for the most kickin dance parties.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
         </div>
-    </body>
-    <footer>
-        <hr/>
-        49 Rock Street, Pacific Palisades, California 90272<br/></br>
-        (555) 555-1616
-    </footer>
+            <hr/ style="height:1px;border:none;color:#333;background-color:#333;margin-top:0%">
+            <div class="row footer">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        49 Rock Street, Pacific Palisades, California 90272<br/></br>
+                        (555) 555-1616
+                    </p>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+
+</body>
 </html>
